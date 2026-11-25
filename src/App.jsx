@@ -5,6 +5,7 @@ import PlayerSelect from './components/PlayerSelect.jsx'
 import Stats from './components/Stats.jsx'
 import Projects from './components/Projects.jsx'
 import HighScores from './components/HighScores.jsx'
+import Trophies from './components/Trophies.jsx'
 import Contact from './components/Contact.jsx'
 import Starfield from './components/Starfield.jsx'
 import { beep } from './sound.js'
@@ -73,6 +74,7 @@ export default function App() {
             <Stats />
             <Projects onPlay={() => addScore(1000)} />
             <HighScores />
+            <Trophies />
             <Contact onCoin={() => { setCoins((c) => c + 1); addScore(100) }} />
           </main>
           <footer className="footer">

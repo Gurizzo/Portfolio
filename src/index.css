@@ -319,3 +319,28 @@ main { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
 .loading { position: absolute; font-family: var(--pixel); font-size: 12px; color: var(--yellow); }
 .cabinet-actions { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; }
 .cabinet-hint { text-align: center; font-family: var(--pixel); font-size: 8px; color: var(--dim); }
+
+/* ---------- Stats: evidencia ---------- */
+.stat-note { display: block; margin-top: .4rem; font-size: 18px; color: var(--dim); }
+
+/* ---------- Trophies ---------- */
+.trophies { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; }
+.trophy {
+  border: 3px solid var(--c);
+  background: rgba(11, 2, 33, .9);
+  transition: transform .1s, box-shadow .1s;
+}
+.trophy > a, .trophy > div { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.2rem; height: 100%; }
+.trophy:has(a):hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--c), 0 0 20px var(--c); }
+.trophy-icon {
+  flex: none;
+  width: 52px; height: 52px;
+  display: grid; place-items: center;
+  font-size: 28px;
+  background: #000;
+  border: 3px solid var(--c);
+}
+.trophy-text { display: flex; flex-direction: column; gap: .4rem; flex: 1; }
+.trophy-title { font-family: var(--pixel); font-size: 11px; line-height: 1.5; }
+.trophy-meta { font-size: 19px; color: var(--white); }
+.trophy-link { font-family: var(--pixel); font-size: 9px; color: var(--c); white-space: nowrap; }

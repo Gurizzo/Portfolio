@@ -29,6 +29,7 @@ export default function Stats() {
                 style={{ width: visible ? `${s.value}%` : 0, transitionDelay: `${i * 120}ms` }}
               />
             </div>
+            {s.note && <span className="stat-note">{s.note}</span>}
           </div>
         ))}
       </div>

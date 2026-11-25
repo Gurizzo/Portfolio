@@ -6,7 +6,7 @@ export const player = {
   role: 'Back End Developer',
   level: new Date().getFullYear() - 2020, // años como developer (desde oct. 2020)
   location: 'Montevideo, Uruguay',
-  bio: 'Back End Developer en Equifax. Analista Programador por la Universidad ORT Uruguay, con experiencia full-stack construyendo soluciones con C#, SQL Server y React.',
+  bio: 'Back End Developer en Equifax y Analista Programador por la Universidad ORT Uruguay. Trabajo con C#/.NET y SQL, hago frontends en React, apps Android en Kotlin, y estoy certificado en IA por Google.',
   avatar: '👾',
   email: 'gustavodanielrizzocolman@gmail.com',
   socials: [
@@ -15,16 +15,46 @@ export const player = {
   ],
 }
 
-// Valores de 0 a 100: autoevaluación, ajústalos a tu gusto.
+// Valores de 0 a 100 estimados a partir de tu experiencia y de tus repos de GitHub
+// (cantidad de código, proyectos y qué tan recientes son). note = la evidencia.
 export const stats = [
-  { name: 'C#', value: 90, color: 'cyan' },
-  { name: 'SQL SERVER', value: 85, color: 'green' },
-  { name: 'REACT.JS', value: 75, color: 'pink' },
-  { name: 'HTML', value: 80, color: 'yellow' },
-  { name: 'CSS', value: 70, color: 'cyan' },
+  { name: 'C# / .NET', value: 92, color: 'cyan', note: '10 repos · Equifax · Gosocket' },
+  { name: 'SQL', value: 85, color: 'green', note: 'SQL Server · PostgreSQL · T-SQL' },
+  { name: 'JAVASCRIPT / REACT', value: 78, color: 'yellow', note: '10 repos · React + Vite' },
+  { name: 'KOTLIN / ANDROID', value: 75, color: 'pink', note: '3 apps publicadas en 2026' },
+  { name: 'HTML / CSS', value: 75, color: 'cyan', note: '12 repos' },
+  { name: 'JAVA / SPRING BOOT', value: 60, color: 'green', note: '4 repos' },
+  { name: 'IA GENERATIVA', value: 60, color: 'pink', note: 'Google AI Professional' },
+  { name: 'PYTHON', value: 45, color: 'yellow', note: 'Coursera · scripts de mapas en GPS-Uruguay' },
 ]
 
-export const powerUps = ['ASP.NET', 'Entity Framework', 'Kotlin', 'Android', 'GeneXus', 'Microsoft Excel', 'Microsoft Word', 'PowerPoint', 'Dreamweaver', 'Reparación de PC']
+export const powerUps = [
+  'ASP.NET Core', 'Entity Framework Core', 'PostgreSQL', 'Swagger', 'React Router', 'Vite',
+  'Android Auto', 'MapLibre', 'Spring Boot', 'GitHub Actions', 'Git', 'GeneXus',
+]
+
+// Certificaciones (de LinkedIn). url opcional: enlace a la credencial.
+export const trophies = [
+  {
+    icon: '🤖',
+    title: 'GOOGLE AI PROFESSIONAL',
+    issuer: 'Google · Coursera',
+    date: 'JUL 2026',
+    color: 'yellow',
+    url: 'https://www.coursera.org/account/accomplishments/professional-cert/certificate/FPCVA0F4T0RN',
+  },
+  {
+    icon: '✨',
+    title: 'GOOGLE AI ESSENTIALS',
+    issuer: 'Google · Coursera',
+    date: 'ABR 2026',
+    color: 'cyan',
+    url: 'https://www.coursera.org/account/accomplishments/specialization/NJAX1SP9XPUI',
+  },
+  { icon: '🐍', title: 'PYTHON DATA STRUCTURES', issuer: 'Coursera', date: 'SEP 2020', color: 'green' },
+  { icon: '🐍', title: 'PROGRAMMING FOR EVERYBODY (PYTHON)', issuer: 'Coursera', date: 'AGO 2020', color: 'green' },
+  { icon: '🎓', title: 'ANALISTA GENEXUS FOR STUDENTS V15', issuer: 'GeneXus', date: 'DIC 2017', color: 'pink' },
+]
 
 // Campos de cada proyecto:
 //   demo: URL de la demo (web o página del Release). Vacío → el botón lleva al repo.

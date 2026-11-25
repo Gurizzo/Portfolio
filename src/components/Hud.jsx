@@ -6,6 +6,7 @@ const links = [
   ['#stats', 'STATS'],
   ['#levels', 'LEVELS'],
   ['#scores', 'SCORES'],
+  ['#trophies', 'TROPHIES'],
   ['#continue', 'CONTACT'],
 ]
 
