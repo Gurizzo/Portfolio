@@ -33,7 +33,6 @@ export const powerUps = ['ASP.NET', 'Entity Framework', 'Kotlin', 'Android', 'Ge
 //   kind: 'android' | 'web' → etiqueta de la tarjeta.
 export const projects = [
   {
-    stage: '1-1',
     title: 'UYPS · GPS URUGUAY',
     description: 'Navegador GPS sin conexión para Uruguay, en el teléfono y en Android Auto: rutas giro a giro con voz, sentidos de calles, prohibiciones de giro, vista 3D y búsqueda de lugares cercanos.',
     tech: ['Kotlin', 'Android Auto', 'OpenStreetMap'],
@@ -46,7 +45,6 @@ export const projects = [
     code: 'https://github.com/Gurizzo/GPS-Uruguay',
   },
   {
-    stage: '1-2',
     title: 'SUDOKU GATITOS',
     description: 'Sudoku para Android sin anuncios que se juega con 9 gatitos: 4 dificultades, tableros con solución única, vidas, notas, pistas y ronroneos.',
     tech: ['Kotlin', 'Android', 'Juego'],
@@ -60,7 +58,6 @@ export const projects = [
     hidden: true, // repo privado: quitar esta línea cuando sea público
   },
   {
-    stage: '2-1',
     title: 'REPORTE BASURA',
     description: 'App Android para reportar basura fuera del contenedor: saca una foto, guarda la dirección y coordenadas GPS y la envía por WhatsApp. APK de ~60 KB, sin librerías.',
     tech: ['Kotlin', 'Android', 'GPS'],
@@ -73,18 +70,6 @@ export const projects = [
     code: 'https://github.com/Gurizzo/Reporte-basura',
   },
   {
-    stage: '2-2',
-    title: 'REALITY',
-    description: 'Sitio web para un instituto de inglés, responsive con Bootstrap.',
-    tech: ['HTML', 'CSS', 'Bootstrap'],
-    difficulty: 2,
-    color: 'cyan',
-    kind: 'web',
-    demo: 'https://gurizzo.github.io/Reality/',
-    code: 'https://github.com/Gurizzo/Reality',
-  },
-  {
-    stage: '3-1',
     title: 'QUITA-NODOS 3000',
     description: 'App de escritorio que elimina nodos de todos los XML de una carpeta usando reglas XPath.',
     tech: ['C#', 'XML', 'XPath'],
@@ -94,7 +79,6 @@ export const projects = [
     code: 'https://github.com/Gurizzo/Quita-nodos-3000',
   },
   {
-    stage: '3-2',
     title: 'AHORRAR PAPEL',
     description: 'Une automáticamente los PDFs de una carpeta de Drive en un documento por mes, organizado por año.',
     tech: ['C#', 'PDF', 'Google Drive'],
@@ -104,7 +88,6 @@ export const projects = [
     code: 'https://github.com/Gurizzo/Ahorrar-papel-paganza',
   },
   {
-    stage: '4-1',
     title: 'PORTLOG V2',
     description: 'Proyecto obligatorio de la ORT: aplicación web con persistencia en base de datos mediante Entity Framework.',
     tech: ['ASP.NET', 'C#', 'Entity Framework'],
@@ -114,7 +97,6 @@ export const projects = [
     code: 'https://github.com/Gurizzo/PortLogV2',
   },
   {
-    stage: '4-2',
     title: 'WEATHER APP',
     description: 'App del clima hecha para practicar React.',
     tech: ['React', 'JavaScript', 'CSS'],

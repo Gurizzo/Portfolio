@@ -23,10 +23,10 @@ export default function Projects({ onPlay }) {
         <span className="stage">STAGE 3</span> LEVEL SELECT
       </h2>
       <div className="cartridges">
-        {projects.filter((p) => !p.hidden).map((p) => (
+        {projects.filter((p) => !p.hidden).map((p, i) => (
           <article key={p.title} className={`cartridge border-${p.color}`}>
             <div className="cartridge-top">
-              <span className="world">WORLD {p.stage}</span>
+              <span className="world">WORLD {Math.floor(i / 2) + 1}-{(i % 2) + 1}</span>
               <span className="difficulty" title={`Dificultad ${p.difficulty}/5`}>
                 {'★'.repeat(p.difficulty)}
                 <span className="dim">{'★'.repeat(5 - p.difficulty)}</span>
