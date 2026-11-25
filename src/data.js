@@ -55,7 +55,6 @@ export const projects = [
     gif: 'https://raw.githubusercontent.com/Gurizzo/Sudoku-gatitos/main/docs/demo.gif',
     apk: 'https://github.com/Gurizzo/Sudoku-gatitos/releases/download/v1.0.0/SudokuGatitos-1.0.0-release.apk',
     code: 'https://github.com/Gurizzo/Sudoku-gatitos',
-    hidden: true, // repo privado: quitar esta línea cuando sea público
   },
   {
     title: 'REPORTE BASURA',
