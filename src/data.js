@@ -51,8 +51,8 @@ export const trophies = [
     color: 'cyan',
     url: 'https://www.coursera.org/account/accomplishments/specialization/NJAX1SP9XPUI',
   },
-  { icon: '🐍', title: 'PYTHON DATA STRUCTURES', issuer: 'Coursera', date: 'SEP 2020', color: 'green' },
-  { icon: '🐍', title: 'PROGRAMMING FOR EVERYBODY (PYTHON)', issuer: 'Coursera', date: 'AGO 2020', color: 'green' },
+  { icon: '🐍', title: 'PYTHON DATA STRUCTURES', issuer: 'Coursera', date: 'SEP 2020', color: 'green', url: 'https://www.coursera.org/account/accomplishments/certificate/9E95YKGSGRH5' },
+  { icon: '🐍', title: 'PROGRAMMING FOR EVERYBODY (PYTHON)', issuer: 'Coursera', date: 'AGO 2020', color: 'green', url: 'https://www.coursera.org/account/accomplishments/certificate/STN5JHLKHUE9' },
   { icon: '🎓', title: 'ANALISTA GENEXUS FOR STUDENTS V15', issuer: 'GeneXus', date: 'DIC 2017', color: 'pink' },
 ]
 
