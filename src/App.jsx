@@ -8,9 +8,9 @@ import HighScores from './components/HighScores.jsx'
 import Trophies from './components/Trophies.jsx'
 import Contact from './components/Contact.jsx'
 import Starfield from './components/Starfield.jsx'
+import KonamiPad from './components/KonamiPad.jsx'
 import { beep } from './sound.js'
-
-const KONAMI = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']
+import { useKonami } from './konami.js'
 
 export default function App() {
   const [started, setStarted] = useState(false)
@@ -20,22 +20,12 @@ export default function App() {
 
   const addScore = (n) => setScore((s) => s + n)
 
-  // Código Konami → modo arcoíris
-  useEffect(() => {
-    let i = 0
-    const onKey = (e) => {
-      const key = e.key.length === 1 ? e.key.toLowerCase() : e.key
-      i = key === KONAMI[i] ? i + 1 : key === KONAMI[0] ? 1 : 0
-      if (i === KONAMI.length) {
-        i = 0
-        setGodMode((g) => !g)
-        addScore(9999)
-        beep('powerup')
-      }
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [])
+  // Código Konami → modo arcoíris (teclado, o deslizar + botones B/A en táctil)
+  const { padVisible, press } = useKonami(() => {
+    setGodMode((g) => !g)
+    addScore(9999)
+    beep('powerup')
+  })
 
   // Puntos por hacer scroll a nuevas secciones
   useEffect(() => {
@@ -82,6 +72,7 @@ export default function App() {
           </footer>
         </>
       )}
+      {padVisible && <KonamiPad onPress={press} />}
     </div>
   )
 }
