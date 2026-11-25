@@ -274,3 +274,49 @@ main { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ---------- Badge y visor de demos ---------- */
+.demo-badge {
+  align-self: flex-start;
+  font-family: var(--pixel); font-size: 9px;
+  color: var(--bg);
+  padding: .35rem .5rem;
+}
+.modal-backdrop {
+  position: fixed; inset: 0; z-index: 200;
+  display: grid; place-items: center;
+  padding: 1rem;
+  background: rgba(5, 0, 20, .88);
+}
+.arcade-cabinet {
+  --c: var(--cyan);
+  width: min(520px, 100%);
+  max-height: calc(100vh - 2rem);
+  display: flex; flex-direction: column; gap: 1rem;
+  padding: 1.2rem;
+  background: var(--bg);
+  border: 4px solid var(--c);
+  box-shadow: 10px 10px 0 var(--c), 0 0 40px var(--c);
+}
+.cabinet-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: var(--pixel); font-size: 13px; }
+.close-btn { padding: .5rem .7rem; }
+.cabinet-screen {
+  position: relative;
+  flex: 1; min-height: 240px;
+  display: grid; place-items: center;
+  overflow: hidden;
+  background: #000;
+  border: 4px solid var(--white);
+  border-radius: 12px;
+  box-shadow: inset 0 0 40px rgba(0, 240, 255, .25);
+}
+.cabinet-screen img {
+  max-width: 100%;
+  max-height: calc(100vh - 16rem);
+  object-fit: contain;
+  transition: opacity .3s;
+  image-rendering: auto;
+}
+.loading { position: absolute; font-family: var(--pixel); font-size: 12px; color: var(--yellow); }
+.cabinet-actions { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; }
+.cabinet-hint { text-align: center; font-family: var(--pixel); font-size: 8px; color: var(--dim); }
